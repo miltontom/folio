@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Hack, monospace;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgb(47, 47, 47);
+  border-radius: 15px;
+  padding: 20px;
+  width: fit-content;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  padding: 10px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  font-size: 0.8rem;
+  color: darkgray;
+}
+
+footer .copyright {
+  font-size: 1.1rem;
+  margin-right: 5px;
+}
+
+h1 {
+  margin-top: 20px;
+  color: darkgray;
+}
+
+.name {
+  color: white;
+}
+
+p {
+  margin-top: 10px;
+}
+
+.separator {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  width: auto;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: darkgray;
+}
+
+.line {
+  align-self: center;
+  flex: 1;
+  height: 1px;
+  background-color: rgb(47, 47, 47);
+}
+
+.about-me {
+  width: 65ch;
+  line-height: 1.6;
+  text-align: justify;
+  color: aliceblue;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.profile-picture:hover {
+  transform: scale(1.1);
+}
+
+.projects {
+  list-style: none;
+  line-height: 1.6;
+}
+
+.project {
+  display: flex;
+  justify-content: space-between;
+}
+
+a:link {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+a:visited {
+  color: aliceblue;
+}
+
+.python:hover {
+  background: linear-gradient(90deg, #306998 20%, #ffd43b 40%, #ffe873 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.lua:hover {
+  background: linear-gradient(90deg, #00007d 5%, #fff 40%, #929292 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.powershell:hover {
+  background: linear-gradient(90deg, #146fbf 10%, #dedede 40%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.tool {
+  color: skyblue;
+}
+
+.server {
+  color: seagreen;
+}
+
+.joystick {
+  color: orange;
+}

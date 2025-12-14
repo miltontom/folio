@@ -11,6 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding: 20px;
 }
 
 .container {
@@ -155,6 +156,9 @@ a:visited {
 }
 
 @media (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
   h1 {
     font-size: 1.4rem;
     text-align: center;
@@ -165,7 +169,7 @@ a:visited {
   }
 
   .about-me {
-    text-align: left;
+    text-align: justify;
     line-height: 1.5;
   }
 

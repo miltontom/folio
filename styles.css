@@ -10,7 +10,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .container {
@@ -20,14 +20,15 @@ body {
   border: 1px solid rgb(47, 47, 47);
   border-radius: 15px;
   padding: 20px;
-  width: fit-content;
+  width: 100%;
+  max-width: 600px;
 }
 
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: fit-content;
+  width: 100%;
   padding: 10px;
 }
 
@@ -76,7 +77,8 @@ p {
 }
 
 .about-me {
-  width: 65ch;
+  max-width: 65ch;
+  width: 100%;
   line-height: 1.6;
   text-align: justify;
   color: aliceblue;
@@ -98,6 +100,8 @@ p {
 
 .project {
   display: flex;
+  gap: 10px;
+  padding: 6px 6px;
   justify-content: space-between;
 }
 
@@ -110,21 +114,28 @@ a:visited {
   color: aliceblue;
 }
 
-.python:hover {
+.content {
+  width: 100%;
+}
+
+.python:hover,
+.python:focus-visible {
   background: linear-gradient(90deg, #306998 20%, #ffd43b 40%, #ffe873 60%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-.lua:hover {
+.lua:hover,
+.lua:focus-visible {
   background: linear-gradient(90deg, #00007d 5%, #fff 40%, #929292 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-.powershell:hover {
+.powershell:hover,
+.powershell:focus-visible {
   background: linear-gradient(90deg, #146fbf 10%, #dedede 40%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -141,4 +152,25 @@ a:visited {
 
 .joystick {
   color: orange;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .profile-picture {
+    height: 100px;
+  }
+
+  .about-me {
+    text-align: left;
+    line-height: 1.5;
+  }
+
+  footer {
+    margin-top: 30px;
+    text-align: center;
+  }
 }
